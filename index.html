@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BDE César</title>
+    <meta charset='utf-8'/>
+    <style>
+      /* Gros titre */
+        .titre{
+          text-align: center;
+          font-size: 5em;
+          margin: 0px;
+        }
+        #titre-sports{
+          color: #ffbd59;
+        }
+        #head{
+          padding-top: 5em;
+          background-size: cover;
+          background-attachment: fixed;
+          color: white;
+          padding-bottom: 3em;
+        }
+        /* Menu */
+        #menu{
+          margin-top:2em;
+        }
+        .menu-sujets{
+          color: inherit;
+          text-decoration: none;
+          font-size: 1.8em;
+          font-weight: bold;
+        }
+        .menu-sujets:hover{
+          text-decoration: underline;
+        }
+        ul{
+          text-align: center;
+          margin: 0px 5px 0px 10px;
+        }
+        li{
+          display:  inline-block;
+          margin-inline: 20px;
+        }
+
+        /* Compte à rebours */
+        #cpt{
+        border-top: 5px solid white;
+        border-bottom: 5px solid whitesmoke;
+        background-color: #0a090a;
+        color: white ;
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+
+        padding-top:12px;
+        padding-bottom: 12px;
+
+        position: sticky;
+        top: 0;
+        } 
+
+        /* Compte à rebours */
+        dt{
+          font-size: 1.2em;
+          margin: auto;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        dd{
+          margin: 10px;
+        }
+        .sujets{
+          border-top: 2px solid white;
+          border-bottom: 2px solid white;
+          margin : 100px 10% ;
+          padding: 20px;
+          transition: 0.4s ease-in-out;
+          background-color: rgba(0, 0, 0, 0.414);
+        }
+        .sujets:hover{
+          background-color: rgba(0, 0, 0, 0.603);
+        }
+        h2{
+          text-align: center;
+          font-size: 2em;
+          color: #DC3D35;
+        }
+        body{
+          background-color:#87CEFA;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0px;
+          background-image: url(photos/terrain\ de\ foot\ soir.jpg);
+          background-size: cover ;
+          background-attachment: fixed;
+          color: aliceblue;
+
+        }
+        #mouse{
+          position: absolute;
+        }
+      
+        .titre-sujets{
+          font-size: 3em;
+          font-weight: bold;
+          margin-top: 5px; ;
+
+        }
+        
+
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="head">
+      <h1 class="titre">INTER</h1>
+      <h1 id="titre-sports" class="titre">SPORTS</h1>
+      <nav id="menu">
+        <ul>
+          <li><a href="#score" class="menu-sujets">Score</a></li>
+          <li><a href="#description" class="menu-sujets">Description</a></li>
+          <li><a href="#informations" class="menu-sujets">Informations</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="cpt">fesse</div>
+    
+
+    <div id="score" class="sujets"><p class="titre-sujets">Score</p>
+      <dd>Ici vous pourrez voir en temps réelle le déroulement de l'évènement avec le score de chaque équipes</dd>
+    </div>
+
+    <div id="description" class="sujets"><p class="titre-sujets">Description</p>
+      <dt>Voici un event inter département à l'IUT d'Orsay dans le sport pour vous permettre de faire autre chose que manger de crêpes... je vise personne (si)</dt>
+      <dt>Voici une liste des sports pendant l'event : </dt>
+
+      <dt>Les grands classique : Foot, Volley-Ball, Course relais</dt>
+        <dd>Foot : un simple match de foot en 20 minutes</dd>
+        <dd>Volley-Ball : Pareil un match en 20 minutes</dd>
+        <dd>Course : Une course de relais contre une autre équipe</dd>
+      <dt>Un sport d'été : Palet bretons </dt>
+        <dd>C'est comme un pétanque mais sur une planche de bois</dd>
+      <dt>Un sprot de notre enfance : Balle aux priosonniers </dt>
+        <dd>Une bonne petite balle aux priosonniers</dd>
+    </div>
+
+    <div id="informations" class="sujets"><p class="titre-sujets">Informations</p>
+        <dt>Lieux des sports</dt>
+          <dd>L'ensemble des sports vont être à au Centre Sportif SIUP, bla bla bla</dd>
+        <dt>Date et heur de l'évènement</dt>
+          <dd>Rendez-vous le Jeudi 20 avril à 14h !</dd>
+          <dd>Nous estimons que l'évènement durat 2h à 3h</dd>
+        <dt>La victoire :</dt>
+          <dd>Et oui il faut bien une carotte pour vous motiver</dd>
+          <dd>Bon bah pour le moment jsp c'est quoi le prix</dd>
+        <dt>La buvette :</dt>
+          <dd>Il y aura un petit stand pour acheter des boisons et autres</dd>
+          <dd>Un point d'eau sera à disposition pour tous</dd>
+        <dt>Organisateurs :</dt>
+          <dd>Nous sommes trois étudiants de deuxième année dans le département informatique</dd>
+          <dd>Baptiste R : Organisateur principal</dd>
+          <dd>Milan J : Organisateur principal</dd>
+          <dd>Hugo L : Organisateur principal</dd>
+          <dd>Si vous avez des questions ou suggestion n'hésitez pas à nous contacter [...]</dd>
+    </div>
+
+    <script>
+      
+      const endDate = new Date('April 20, 2023 16:00:00').getTime();// Date de fin du compte à rebours
+
+      // Mettre à jour le compte à rebours toutes les secondes :
+      const timer = setInterval(function() {
+
+        let now = new Date().getTime();
+        let timeLeft = endDate - now;//temps restant (ms)
+
+        // Calcul des jours, heures, minutes et secondes restants :
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        // Affichage du compte à rebours dans l'élément HTML approprié
+        document.getElementById("cpt").innerHTML = days + "J " + hours + "H "
+        + minutes + "m " + seconds + "s ";
+
+        // Si le compte à rebours est terminé, afficher un message
+        if (timeLeft < 0) {
+            clearInterval(timer);
+            document.getElementById("cpt").innerHTML = "Le compte à rebours est terminé !";
+          }
+        }, 1000);
+    </script>
+  </body>
+</html>
