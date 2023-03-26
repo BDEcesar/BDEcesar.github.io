@@ -17,7 +17,6 @@
           padding-top: 5em;
           background-size: cover;
           background-attachment: fixed;
-          color: white;
           padding-bottom: 3em;
         }
         /* Menu */
@@ -47,7 +46,6 @@
         border-top: 5px solid white;
         border-bottom: 5px solid whitesmoke;
         background-color: #0a090a;
-        color: white ;
 
         text-align: center;
         font-weight: bold;
@@ -55,17 +53,14 @@
 
         padding-top:12px;
         padding-bottom: 12px;
-
-        position: sticky;
-        top: 0;
         } 
 
-        /* Compte à rebours */
+        /* Sujets */
         dt{
-          font-size: 1.2em;
+          font-size: 1.6em;
           margin: auto;
           font-weight: bold;
-          text-decoration: underline;
+          color: #ffbd59;
         }
         dd{
           margin: 10px;
@@ -76,10 +71,10 @@
           margin : 100px 10% ;
           padding: 20px;
           transition: 0.4s ease-in-out;
-          background-color: rgba(0, 0, 0, 0.414);
+          background-color: rgba(12, 1, 25, 0.757);
         }
         .sujets:hover{
-          background-color: rgba(0, 0, 0, 0.603);
+          background-color: #0a090a;
         }
         h2{
           text-align: center;
@@ -87,14 +82,12 @@
           color: #DC3D35;
         }
         body{
-          background-color:#87CEFA;
           font-family: Arial, Helvetica, sans-serif;
           margin: 0px;
           background-image: url(photos/terrain\ de\ foot\ soir.jpg);
           background-size: cover ;
           background-attachment: fixed;
-          color: aliceblue;
-
+          color: azure;
         }
         #mouse{
           position: absolute;
@@ -106,65 +99,75 @@
           margin-top: 5px; ;
 
         }
+
+        /* Footer */
+        footer{
+          height: 3em;
+          background-color: #0a090a;
+          border-top: 3px white solid;
+          text-align: center;
+          font-size: 1.2em;
+          font-weight: bold;
+          padding-top: 1em;
+        }
         
-
-
       
     </style>
   </head>
   <body>
-    <div id="head">
-      <h1 class="titre">INTER</h1>
-      <h1 id="titre-sports" class="titre">SPORTS</h1>
-      <nav id="menu">
-        <ul>
-          <li><a href="#score" class="menu-sujets">Score</a></li>
-          <li><a href="#description" class="menu-sujets">Description</a></li>
-          <li><a href="#informations" class="menu-sujets">Informations</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div id="cpt">fesse</div>
+    <header>
+      <div id="head">
+        <h1 class="titre">INTER</h1>
+        <h1 id="titre-sports" class="titre">SPORTS</h1>
+        <nav id="menu">
+          <ul>
+            <li><a href="#score" class="menu-sujets">Score</a></li>
+            <li><a href="#informations" class="menu-sujets">Informations</a></li>
+            <li><a href="#description" class="menu-sujets">Description</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div id="cpt">fesse</div>
+    </header>
     
 
     <div id="score" class="sujets"><p class="titre-sujets">Score</p>
       <dd>Ici vous pourrez voir en temps réelle le déroulement de l'évènement avec le score de chaque équipes</dd>
     </div>
 
-    <div id="description" class="sujets"><p class="titre-sujets">Description</p>
-      <dt>Voici un event inter département à l'IUT d'Orsay dans le sport pour vous permettre de faire autre chose que manger de crêpes... je vise personne (si)</dt>
-      <dt>Voici une liste des sports pendant l'event : </dt>
-
-      <dt>Les grands classique : Foot, Volley-Ball, Course relais</dt>
-        <dd>Foot : un simple match de foot en 20 minutes</dd>
-        <dd>Volley-Ball : Pareil un match en 20 minutes</dd>
-        <dd>Course : Une course de relais contre une autre équipe</dd>
-      <dt>Un sport d'été : Palet bretons </dt>
-        <dd>C'est comme un pétanque mais sur une planche de bois</dd>
-      <dt>Un sprot de notre enfance : Balle aux priosonniers </dt>
-        <dd>Une bonne petite balle aux priosonniers</dd>
-    </div>
-
     <div id="informations" class="sujets"><p class="titre-sujets">Informations</p>
-        <dt>Lieux des sports</dt>
-          <dd>L'ensemble des sports vont être à au Centre Sportif SIUP, bla bla bla</dd>
-        <dt>Date et heur de l'évènement</dt>
+        <dt>Où ?</dt>
+          <dd>L'ensemble des sports vont se dérouler sur le plateau de Saclay.</dd>
+        <dt>Quand ?</dt>
           <dd>Rendez-vous le Jeudi 20 avril à 14h !</dd>
-          <dd>Nous estimons que l'évènement durat 2h à 3h</dd>
+          <dd>Nous estimons que l'évènement durat environ 4h</dd>
         <dt>La victoire :</dt>
           <dd>Et oui il faut bien une carotte pour vous motiver</dd>
           <dd>Bon bah pour le moment jsp c'est quoi le prix</dd>
         <dt>La buvette :</dt>
           <dd>Il y aura un petit stand pour acheter des boisons et autres</dd>
           <dd>Un point d'eau sera à disposition pour tous</dd>
-        <dt>Organisateurs :</dt>
-          <dd>Nous sommes trois étudiants de deuxième année dans le département informatique</dd>
-          <dd>Baptiste R : Organisateur principal</dd>
-          <dd>Milan J : Organisateur principal</dd>
-          <dd>Hugo L : Organisateur principal</dd>
-          <dd>Si vous avez des questions ou suggestion n'hésitez pas à nous contacter [...]</dd>
+        <dt>Des questions ?</dt>
+          <dd>cContacte nous par mail : orsay.horus@gmail.com </dd>
     </div>
+
+    <div id="description" class="sujets"><p class="titre-sujets">Description</p>
+          <dt>C'est quoi l'Inter-sports ?</dt>
+            <dd>Il s'agit d'un évènement inter département à l'IUT d'Orsay, il est organiser par trois étudiants de deuxième année, Baptiste.R, Milan.J et Hugo.L</dd>
+            <dd>L'évènement en lui-même est une simple compétition sportive en équipe, nous vous proposons cette évènement pour animer la vie étudiante au seins de l'IUT qui n'est pas très présent, il s'agit de notre première évènement et nous aimerions vraiment vous proposer d'autres évènements !</dd>
+          
+          <dt>Voici la liste des sports :</dt>
+            <dd>Classique I   : Foot, un simple match en 20 minutes.</dd>
+            <dd>Classique II  : Volley-Ball, Pareil un match en 20 minutes.</dd>
+            <dd>Classique III : Course relais, un affrontement entre les équipes sur une course relais.</dd>
+            <dd>Sport d'été   : Palet bretons, c'est vraiment comme la pétanque mais sur une planche en bois.</dt>
+            <dd>Notre enfance : Balle aux prisonniers, Un affrontement contre une autre équipe sur un jeu de la cour de récré.</dd>
+        </div>
+
+    <footer>
+      Site réalisé par moi-même 
+    </footer>
 
     <script>
       
