@@ -1,0 +1,124 @@
+footer {
+    background-color: #252525;
+    width : 100%;
+}
+
+nav.Footer {
+    text-align : center ;
+    padding-bottom : 15px ;
+}
+h4{
+    margin-block-end: 0em;
+}
+footer nav{
+    padding-top : 30px ;
+    padding-bottom : 20px;
+    margin : auto ;
+    border-bottom : 3px white solid ;
+    width : 100% ; 
+    text-align : center ;
+    font-size : 18px ; 
+    letter-spacing: 0.8px;
+    word-spacing: 50px;
+    font-size: 1.3em ;
+    font-family: 'Barlow', sans-serif;
+}
+
+.Footer a{
+    color : white ;
+}
+
+.Footer a:hover{
+    text-decoration: overline white solid 2px;
+}
+
+.Footer_container{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer_item{
+    flex: 1 1 0;
+}
+
+.Footer_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Footer_wrapper .Name{
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.Footer_wrapper p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.btn{
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid transparent;
+    line-height: 2.2;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.btn-block{
+    display: block;
+    width: 45%;
+}
+
+.Social_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin: auto;
+    flex: 1 1 0;
+}
+
+.Social_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin: auto;
+}
+
+.Footer_item a{
+    color:black;
+    text-decoration: none;
+}
+
+.Footer_item .Social-name{
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.Social-text {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Copyright {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: white;
+}

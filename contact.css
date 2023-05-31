@@ -1,0 +1,309 @@
+body {
+    margin : 0;
+}
+
+header {
+    width : auto;
+    height: 500px;
+    background-image : url(image/Sakura.jpg);
+    background-size: cover;
+    background-position: right 55% bottom 10%;
+    transition: all 500ms ease-out; /* internet  https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions*/
+    border-bottom : 3px solid white ;
+}
+header:hover{
+    font-size : 125% ;
+}
+header nav {
+    margin : 0 auto;
+    width : 500px;
+    text-align : center ;
+    padding-top : 30px ;
+    padding-bottom : 5px ;
+    border-bottom : rgba(255, 255, 255, 0) solid 3px;
+}
+header nav a {
+    text-decoration: none;
+    display : block ;
+    color : white ;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    padding : 5px ;
+    margin : 2px ; 
+    z-index: 2;
+    font-family: 'Barlow', sans-serif;
+    font-size : 20px ;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    position : relative ;
+}
+
+header li a:hover{
+    color : #caa71a ;
+}
+.sub-menu{
+    display : none ;
+}
+header li:hover .sub-menu{
+    display :   block ;
+    position : absolute ;
+    text-align :left;
+    background-color: #252525e5;
+
+}
+.logo-Header{
+    position : absolute ;
+    left: 10% ;
+    top : 100px ;
+}
+#page{
+    margin-bottom: 5px;
+    border-bottom : 2px white solid ;
+}
+h2, h3 {
+    text-align : center; 
+    color :rgb(245, 245, 245) ; 
+    font-family: 'Barlow', sans-serif;
+}
+
+div.S1{
+    width : 80%;
+    margin-left: 10%;
+    margin-top : 2%;
+}
+
+div.S2{
+    font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+    margin : 0px;
+    padding: 0px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.S3{
+    width : 100%;
+    height : auto;
+}
+
+.S1 .column {
+    float: left;
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    background-color : white ;
+}
+
+/* Add some shadows to create a card effect */
+.S1 .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+  
+/* Some left and right padding inside the container */
+.S1 .container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.S1 .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.S1 h2{
+    color : black ;
+}
+.row{
+    width : 100%;
+    display:flex;
+    justify-content: center;
+}/*
+body{
+    background-color :rgba(205, 214, 230, 0.678);
+
+    
+}*/
+.S2 form{
+	background-color: white;
+	padding : 45px;
+}
+.S2 form h1{
+	font-size: 20px;
+}
+
+.S2 form .separation{
+	width : 100%;
+	height: 1px;
+	background-color: #747cdf;
+}
+
+.S2 form .corps-formulaire{
+	display: flex; 
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.S2 form .corps-formulaire .groupe{
+	position: relative;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.S2 form .corps-formulaire .gauche .groupe input{
+	margin-top: 5px;
+	padding: 10px 5px 10px 30px;
+	border: 1px solid #c9c9c9;
+	outline-color: #747cdf; 
+	border-radius: 5px;
+}
+
+.S2 form .corps-formulaire .gauche .groupe i{
+	position: absolute;
+	left: 0;
+	top: 25px;
+	padding: 9px 8px;
+	color: #747cdf;
+}
+
+.S2 form .corps-formulaire .droite{
+	margin-left: 40px;
+    width : 400px;
+}
+
+.S2 form .corps-formulaire .gauche{
+    width : 300px;
+}
+
+.S2 form .corps-formulaire .droite .groupe{
+	height : 100%;
+}
+.S2 form .corps-formulaire .droite .groupe textarea{
+	margin-top: 5px;
+	padding : 10px;
+	background-color: #f8f8f8;
+	border : 2px solid #747cdf;
+	outline: none;
+	border-radius : 5px;
+	resize : none;
+	height : 78%;
+}
+
+.S2 form .pied-formulaire button{
+	margin-top: 10px;
+	background-color : #747cdf;
+	color: white;
+	font-size: 15px;
+	border: none;
+	padding : 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	cursor:pointer;
+	transition: transform 0.5s;
+}
+
+.S2 form .pied-formulaire button:hover{
+	transform: scale(1.1);
+}
+
+.S2 form .pied-formulaire2 button{
+	margin-top: 10px;
+	background-color : #747cdf;
+	color: white;
+	font-size: 15px;
+	border: none;
+	padding : 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	cursor:pointer;
+	transition: transform 0.5s;
+}
+
+.S2 form .pied-formulaire2 button:hover{
+	transform: scale(1.1);
+}
+
+.S2 form .pied-formulaire2{
+    display:none;
+}
+
+.S3 iframe{
+    width : 40%;
+    height : 300px;
+    transition: all 500ms ease-out;
+}
+.S3 iframe:hover{
+    width : 80%;
+    height : 400px;
+}
+
+.S3 p{
+    text-align: center;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height : 150% ;
+}
+
+.Copyright h4{
+    text-align: center;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .S1 .column {
+      width: 80%;
+      display: block;
+    }
+    
+    .row{
+        margin-left: 17%;
+        width : 80%;
+    }
+
+    .S2 form .corps-formulaire .droite{
+		margin-left: 0px;
+	}
+
+    .S2 form .corps-formulaire .droite .groupe textarea{
+        margin-top: 5px;
+        padding : 10px;
+        background-color: #f8f8f8;
+        border : 2px solid #747cdf;
+        outline: none;
+        border-radius : 5px;
+        resize : none;
+        height : 150px;
+        width : 276px;
+    }
+
+    .S2 form .pied-formulaire2{
+        display:flex;
+    }
+
+    .S2 form .pied-formulaire{
+        display:none;
+    }
+
+    .Social-text{
+        display:none;
+    }
+    .Footer_wrapper p{
+        display:none;
+    }
+    .Footer_container{
+        display: flex;
+        width: 100%;
+        height: 160px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
