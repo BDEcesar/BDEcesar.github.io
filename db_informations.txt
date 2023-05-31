@@ -1,0 +1,15 @@
+Accès à SFTP :
+- FQDN : webdev.iut-orsay.fr 
+- Port : 6022 (TCP) 
+- Authentification 
+       * Identifiant : brodrig 
+       * Mot de passe : le mot de passe de votre compte informatique. 
+Accès à PhpMyAdmin :
+- URL : https://webdev.iut-orsay.fr/phpmyadmin/ 
+- Première authentification 
+       * Identifiant : brodrig 
+       * Mot de passe : le mot de passe de votre compte informatique. 
+- Deuxième authentifiction 
+       * Identifiant : brodrig 
+       * Mot de passe : (bx^f475#n#b]#L~<Z9- 
+ /!\ Important : nous vous conseillons de modifier ce mot de passe via phpmyadmin 

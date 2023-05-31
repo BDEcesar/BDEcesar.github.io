@@ -1,201 +1,184 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>BDE César</title>
-    <meta charset='utf-8'/>
-    <style>
-      /* Gros titre */
-        .titre{
-          text-align: center;
-          font-size: 8em;
-          margin: 0px;
-        }
-        #titre-sports{
-          color: #ffbd59;
-        }
-        #head{
-          padding-top: 5em;
-          background-size: cover;
-          background-attachment: fixed;
-          padding-bottom: 3em;
-        }
-        /* Menu */
-        #menu{
-          margin-top:2em;
-        }
-        .menu-sujets{
-          color: inherit;
-          text-decoration: none;
-          font-size: 2.5em;
-          font-weight: bold;
-        }
-        .menu-sujets:hover{
-          text-decoration: underline;
-        }
-        ul{
-          text-align: center;
-          margin: 0px 5px 0px 10px;
-        }
-        li{
-          display:  inline-block;
-          margin-inline: 20px;
-        }
+<html lang="fr">
 
-        /* Compte à rebours */
-        #cpt{
-        border-top: 5px solid white;
-        border-bottom: 5px solid whitesmoke;
-        background-color: #0a090a;
-        text-align: center;
-        font-weight: bold;
-        font-size: 4em;
-        padding-top:12px;
-        padding-bottom: 12px;
-        } 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content = "IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="image/Logo-CFSE.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Site internet de la CFSE</title>
+	<link href="graph.css" rel="stylesheet" type="text/css" />
+  <link href="Footer.css" rel="stylesheet" type="text/css" />
+	<link href="Fonts.css" rel="stylesheet" type="text/css" />
+</head>
 
-        /* Sujets */
-        dt{
-          font-size: 3em;
-          margin: auto;
-          font-weight: bold;
-          color: #ffbd59;
-        }
-        dd{
-          margin: 20px 0px 10px 20px;
-          font-size: 1.6em;
-          text-justify: auto;
-        }
-        .sujets{
-          border-top: 2px solid white;
-          border-bottom: 2px solid white;
-          margin : 5em 6% ;
-          padding: 1em;
-          transition: 0.4s ease-in-out;
-          background-color: rgba(12, 1, 25, 0.757);
-        }
-        .sujets:hover{
-          background-color: #0a090a;
-        }
-        h2{
-          text-align: center;
-          font-size: 2em;
-          color: #DC3D35;
-        }
-        body{
-          font-family: Arial, Helvetica, sans-serif;
-          margin: 0px;
-          background-image: url(photos/terrain\ de\ foot\ soir.jpg);
-          background-size: cover ;
-          background-attachment: fixed;
-          color: azure;
-        }
-        #mouse{
-          position: absolute;
-        }
-      
-        .titre-sujets{
-          text-align: center;
-          font-size: 3em;
-          font-weight: bold;
-          margin-top: 5px; ;
-
-        }
-
-        /* Footer */
-        footer{
-          height: 3em;
-          background-color: #0a090a;
-          border-top: 3px white solid;
-          text-align: center;
-          font-size: 1.2em;
-          font-weight: bold;
-          padding-top: 1em;
-        }
-        
-      
-    </style>
-  </head>
-  <body>
+<body>
     <header>
-      <div id="head">
-        <h1 class="titre">INTER</h1>
-        <h1 id="titre-sports" class="titre">SPORTS</h1>
-        <nav id="menu">
-          <ul>
-            <li><a href="#score" class="menu-sujets">Score</a></li>
-            <li><a href="#informations" class="menu-sujets">Informations</a></li>
-            <li><a href="#description" class="menu-sujets">Description</a></li>
-          </ul>
-        </nav>
-      </div>
-  
-      <div id="cpt">fesse</div>
-    </header>
+			<nav> 
+				<ul>
+					<li>
+						<a href="index.html" class="Menu" id="page"> Accueil</a>
+					</li>
+					
+					<li>
+						<a href="contact.html" class="Menu">Contact</a>
+					</li>
+					<li>
+							<a href="Formation.html" class="Menu">Formation</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="Formation.html#survie" class="sousMenu">Cours de survie</a>
+								</li>
+								<li>
+									<a href="Formation.html#soins" class="sousMenu">Cours de soin</a>
+								</li>
+								<li>
+									<a href="Formation.html#situation" class="sousMenu">Mise en situation</a>
+								</li>
+								<li>
+									<a href="Formation.html#alimentation" class="sousMenu">Cours d'alimentation</a>
+								</li>
+							</ul>
+						</li>
+				</ul>
+			</nav>
+		<div class="texteHeader">
+            <h2> Centre de Formation en Survie Extrême</h2>
+            <h3>Vivez dans l'Extrême !</h3>
+			<a href="index.html"><img src="image/logo-simple.png" alt="Logo CFSE" class="logo-Header"></a>
+    	</div>
+	</header>
+
+		<div class="section1">
+		  <div class="block1">
+				<span class="texte_block_1_strong"><strong>Vous voulez devenir un expert en survie extrême en tout condition ?</strong></span>
+			  
+          <span class="span">
+            Vous désirez devenir un survivalisme en milieu extrême ?
+            Le centre de formation de la CFSE et toute son équipe va vous mener vers cet objectif, pour cela nous vous proposons d’effectuer une formation sur deux ans, 
+            cette formation à un ensemble de quatre pôle accès sur les techniques de survivalisme.
+            À la fin de cette formation vous aurez les connaissances et l’expérience suffisante pour permettre votre survie et celle d’autrui dans des milieux extrêmes.
+            Nous nous situons dans les Alpes au lac de Vens, cette localisation permet une mise en condition mentale constance en terrain hostile.
+          </span>
+			<br>
+				  <a href="Formation.html" class="btn_section1">Accéder à la formation</a>
+			</div>
+		</div>
+
     
+	<div class="section2">
+			<div class="titre1">
+					<h1>Pourquoi nous ?</h1>
+			</div>
+			<div class="presentation">
+				<p>
+					La CFSE vous propose un apprentissage depuis plus de 20 ans qui est unique dans son genre, 
+					nous avons réuni dans notre équipe des formateurs qui sont pour chacun d’eux des représentants de leurs domaines de prédilection avec un palmarès reconnu. 
+					Nos stages de mise en pratique sont une réelle mise en situation pour vous offrir une expérience authentique 
+					(Ex : mise une relation avec des Indiens d’Amazonie).
+					Nos stages restent très encadrés par tous les professeurs de la CFSE, nous vous mettons dans une immersion totale tout en gardant une sécurité dont nous sommes très exigeants. 
+					Nous sommes les seuls à délivrer un diplôme reconnu à l’international, vous ouvrant les portes de métiers risqués.
+					70% de nos élèves ressorte avec le diplôme et 30% d’entre eux trouve directement un emploi dans des institutions reconnues mondialement telles que le CNRS.
+				</p>
+		</div>	
+	</div>
 
-    <div id="score" class="sujets"><p class="titre-sujets">Score</p>
-      <dd>Ici vous pourrez voir en temps réelle le déroulement de l'évènement avec le score de chaque équipes</dd>
-    </div>
 
-    <div id="informations" class="sujets"><p class="titre-sujets">Informations</p>
-        <dt>Où ?</dt>
-          <dd>L'ensemble des sports vont se dérouler sur le plateau de Saclay.</dd>
-        <dt>Quand ?</dt>
-          <dd>Rendez-vous le Jeudi 20 avril à 14h !</dd>
-          <dd>Nous estimons que l'évènement durat environ 4h</dd>
-        <dt>La victoire :</dt>
-          <dd>Et oui il faut bien une carotte pour vous motiver</dd>
-          <dd>Bon bah pour le moment jsp c'est quoi le prix</dd>
-        <dt>La buvette :</dt>
-          <dd>Il y aura un petit stand pour acheter des boisons et autres</dd>
-          <dd>Un point d'eau sera à disposition pour tous</dd>
-        <dt>Des questions ?</dt>
-          <dd>Contactez nous par mail : orsay.horus@gmail.com </dd>
-    </div>
+	<div class="section3">
+			<video  autoplay loop muted>
+				<source src="vidéo/kayak.mp4" type="video/mp4" > 		  
+			 </video>			
+			</div>
 
-    <div id="description" class="sujets"><p class="titre-sujets">Description</p>
-          <dt>C'est quoi l'Inter-sports ?</dt>
-            <dd>Il s'agit d'un évènement inter département à l'IUT d'Orsay, il est organiser par trois étudiants de deuxième année, Baptiste.R, Milan.J et Hugo.L</dd>
-            <dd>L'évènement en lui-même est une simple compétition sportive en équipe, nous vous proposons cette évènement pour animer la vie étudiante au seins de l'IUT qui n'est pas très présent, il s'agit de notre première évènement et nous aimerions vraiment vous proposer d'autres évènements !</dd>
-          
-          <dt>Voici la liste des sports :</dt>
-            <dd>Classique I   : Foot, un simple match en 20 minutes.</dd>
-            <dd>Classique II  : Volley-Ball, Pareil un match en 20 minutes.</dd>
-            <dd>Classique III : Course relais, un affrontement entre les équipes sur une course relais.</dd>
-            <dd>Sport d'été   : Palet bretons, c'est vraiment comme la pétanque mais sur une planche en bois.</dt>
-            <dd>Notre enfance : Balle aux prisonniers, Un affrontement contre une autre équipe sur un jeu de la cour de récré.</dd>
-        </div>
 
-    <footer>
-      Site réalisé par moi-même 
-    </footer>
+	<div class="section4">
+		<div class="block4_1">
+			<span class="block4_texte">
+				Vous êtes un passionné de la nature et de ses milliers d'hectares de verdure ? Ce que vous savez ne suffit pas ? 
+				Si vous ressentez le besoin indispensable de vivre en harmonie avec la nature et de la maitriser dans tous ces domaines, 
+				Nous vous encourageons à rejoindre nos rangs, vous pouvez postuler dans notre formation généraliste de survie en condition extrême. 
+				Grâce à celle-ci, vous posséderez toutes les bases théoriques de survie. Nous proposons des stages qui rendront possible la mise en pratique du savoir acquis.
+			</span>
+		</div>
+		<div class="block4_1">
+			<span class="block4_texte">
+				Vous êtes un chercheur, botaniste, biologiste ou autres secteurs qui nécessitent une bonne formation complète et approfondie du survivalisme dans le cadre de votre futur travail ?
+				La CFSE est là pour proposer une formation exclusive vous permettant de connaître des manières approfondies dans votre secteur de votre prédilection.
+				Nous saurons vous mettre en relation avec des centaines de professionnels compétents qui interviendront dans vos cours afin de mener votre objectif vers la réussite.
+				Nous mettrons également à disposition si nécessaire des vidéos, cours à distance et chapitres axés dans votre domaine.
+			</span>
+		</div>
+	</div>
 
-    <script>
-      
-      const endDate = new Date('April 20, 2023 16:00:00').getTime();// Date de fin du compte à rebours
+<footer>
+		<nav class="Footer">
+			<a href="index.html">Accueil</a>
+			<a href="Contact.html">Contact</a>
+			<a href="Formation.html">Formation</a>
+		</nav>
 
-      // Mettre à jour le compte à rebours toutes les secondes :
-      const timer = setInterval(function() {
 
-        let now = new Date().getTime();
-        let timeLeft = endDate - now;//temps restant (ms)
+		<div class="Footer_container">
+			<div class="Footer_item">
+				<div class="Footer_wrapper">
+					<img src="image/logo-simple.png" alt="Logo CFSE">
+					<p class="Name">
+						PRATHEUANGSINH Nicolas<br>
+						RODRIGUES Baptiste
+						<br>
+						<a href= "Rapport.pdf">Rapport</a>
+					</p>
+				</div>
+			</div>
 
-        // Calcul des jours, heures, minutes et secondes restants :
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+			<div class="Footer_item">
+				<div class="Footer_wrapper">
+					<p>Itinéraire de notre établissement : </p>
+				</div>
+				<div class="Footer_wrapper">
+					<a href="https://goo.gl/maps/hUtDRwUBMWephv779" class="btn bg-white btn-block" target="_blank" rel="noopener">
+						<i class="fas fa-map-marker-alt"></i>
+						<div class="Social-text">
+							Plan Google Maps
+						</div>	
+					</a>
+				</div>
+			</div>
 
-        // Affichage du compte à rebours dans l'élément HTML approprié
-        document.getElementById("cpt").innerHTML = days + "J " + hours + "H "
-        + minutes + "m " + seconds + "s ";
+			<div class="Footer_item">
+				<div class="Social_wrapper">
+					<div class="Social_container">
+						<a class="Social-name" href ="https://www.twitter.com//CFSE">
+							<i class="fab fa-twitter"></i>
+							<div class="Social-text">Twitter</div>
+						</a>
+					</div>
+					<div class="Social_container">
+						<a class="Social-name" href="https://www.instagram.com/CFSE">
+							<i class="fab fa-instagram"></i>
+							<div class="Social-text">Instagram</div>
+						</a>
+					</div>
+					
+					
+					<div class="Social_container">
+						<a class="Social-name" href="https://www.facebook.com/CFSE">
+							<i class="fab fa-facebook"></i>
+							<div class="Social-text">Facebook</div>
+						</a>
+					</div>
+				</div>	
+			</div>
 
-        // Si le compte à rebours est terminé, afficher un message
-        if (timeLeft < 0) {
-            clearInterval(timer);
-            document.getElementById("cpt").innerHTML = "Le compte à rebours est terminé !";
-          }
-        }, 1000);
-    </script>
-  </body>
+		</div>
+
+		<div class="Footer-part-3">
+			<h4 class="Copyright">© CFSE 2020-2021</h4>
+		</div>
+
+	</footer>
+
+</body>
+
 </html>
